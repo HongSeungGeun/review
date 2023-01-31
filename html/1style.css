@@ -1,0 +1,27 @@
+.photo {
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.name {
+    text-align: center;
+}
+
+.job {
+    padding: 10px;
+}
+
+.job strong {
+    color: red;
+}
+
+.main-box {
+    padding: 20px; 
+    background-color: palegoldenrod; 
+    color: black;
+    box-shadow: 5px 5px;
+}
