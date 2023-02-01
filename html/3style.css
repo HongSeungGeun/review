@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+}
+
+div, input, textarea {
+    box-sizing: border-box;
+}
+
+
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/friend/we1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    position: relative;
+}
+
+.main-title {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.main-content {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+}
+
+.main-btn {
+    border: none sole 1px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    padding: 8px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.sub-background {
+    width: 650px;
+    height: 350px;
+    margin: auto;
+    padding: 1px;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(../img/friend/we2.jpg);
+    position: relative;
+    bottom: 40px;
+}
+
+.sub-title {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-background {
+    padding: 30px;
+
+    background-color: darkgrey;
+
+    position: relative;
+}
+
+.form-white {
+    background-color: white;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+
+}
+
+.form {
+    padding: 40px;
+}
+
+.form-email {
+    width: 100%;
+    padding: 10px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+
+.form-name {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+
+
+.form-message {
+    clear: both;
+    width: 100%;
+    padding: 10px;
+}
+
+
+
+.form-checkbox button {
+    padding: 10px 40px;
+    color: white;
+    background-color: orange;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    right: -225px;
+}
