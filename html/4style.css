@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 8px;
+}
+
+td {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid lightskyblue;
+    padding: 10px;
+}
+
+
+
+
+
+.back-skyblue {
+    width: 100%;
+    padding: 30px 70px;
+    background-color: lightskyblue;
+}
+
+.table-white {
+    background-color: white;
+}
+
+tr img {
+    width: 150px;
+}
+
+.main-title {
+    vertical-align: middle;
+}
+
+.main-table {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    color: lightseagreen;
+    background-color: white;
+}
+
+.table-footer {
+    width: 80%;
+}
+
+.table-footer p {
+    color: lightcoral;
+    padding-top: 25px;
+}
+
+.table-footer button {
+    padding: 20px 40px;
+    color: white;
+    background-color: darkblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: red;
+}
+
+.btn:active {
+    background-color: orange;
+}
+
