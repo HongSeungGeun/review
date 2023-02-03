@@ -15,7 +15,18 @@ td {
     padding: 10px;
 }
 
+.navbar {
+    display: flex;
+    background-color: lightcoral;
+    align-items: center;
+    height: 70px;
+}
 
+.nav-item {
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+}
 
 
 
@@ -37,17 +48,25 @@ tr img {
     vertical-align: middle;
 }
 
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
 .main-table {
     width: 100%;
-    max-width: 700px;
-    margin: auto;
+    max-width: 1000px;
     text-align: center;
     color: lightseagreen;
     background-color: white;
 }
 
 .table-footer {
-    width: 80%;
+    width: 100%;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .table-footer p {
@@ -71,4 +90,6 @@ tr img {
 .btn:active {
     background-color: orange;
 }
+
+
 
