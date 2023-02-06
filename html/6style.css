@@ -1,0 +1,238 @@
+body {
+    margin: 0%;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+
+.main-background {
+    height: 600px;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(to bottom,lightskyblue, plum)
+}
+
+
+.main-1 {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-1-title {
+    float: left;
+    margin-top: 50px;
+}
+
+.img-iphone {
+    float: right;
+    width: 400px;
+    margin-top: 89px;
+}
+
+.main-1-title button{
+    padding: 15px;
+    color: white;
+    background-color: darkgrey;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.main-2 {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.main-2-title {
+    padding: 20px;
+}
+
+.main-2-title button{
+    color: white;
+    background-color: darkgray;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+
+.main-3 {
+    width: 100%;
+    height: 450px;
+    background-color: rgb(65, 65, 136);
+}
+
+.main-3-title {
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+}
+
+.main-3-icons {
+    padding-top: 30px;
+}
+
+
+
+.main-3-icons .box {
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: white;
+}
+
+
+.box i { 
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding-top: 25px;
+    box-sizing: border-box;
+    color: rgb(65, 65, 136);;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+.main-4 {
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+
+.main-4-title {
+    padding-top: 20px;
+}
+
+
+
+.main-5 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.main-5-title1 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(../img/portfolio/img2.png);
+    background-size: cover;
+    position: relative;
+}
+
+.main-5-title2 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(../img/portfolio/img3.png);
+    background-size: cover;
+}
+
+.main-5-title3 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(../img/portfolio/img4.png);
+    background-size: cover;
+}
+
+.main-5-title4 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url(../img/portfolio/img5.png);
+    background-size: cover;
+}
+
+.main-5-textbox {
+    color: white;
+    padding: 50px;
+    width: 100%;
+}
+
+.main-5-con {
+    text-align: left;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.white-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0px solid white;
+    z-index: 2;
+    transition: all 0.7s;
+    
+}
+
+.white-box:hover {
+    border: 30px solid white;
+}
+
+
+.main-6 {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.main-6-title {
+    width: 50%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.main-6-title .box-6{
+    float: left;
+    width: 33%;
+}
+
+.box-6 i {
+    background-color: rgb(65, 65, 136);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    padding-top: 15px;
+    color: white;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+
+
+@media screen and (max-width : 992px) {
+    .img-iphone {
+        width: 271px;
+        display: block;
+        float: none;
+        margin: auto;
+        margin-top: 42px;
+    }
+    .main-1-title {
+        float: none;
+        margin-top: 50px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main-3-icons .box {
+        width: 50%;
+    }
+    .main-3 {
+        height: 650px;
+    }
+}
