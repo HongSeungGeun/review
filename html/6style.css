@@ -226,9 +226,6 @@ div {
         margin-top: 50px;
         text-align: center;
     }
-}
-
-@media screen and (max-width: 992px) {
     .main-3-icons .box {
         width: 50%;
     }
@@ -236,3 +233,4 @@ div {
         height: 650px;
     }
 }
+
