@@ -1,0 +1,110 @@
+div {
+    box-sizing: border-box;
+}
+
+.white-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+
+.left-title {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.left-title img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.left-title p:nth-child(3) {
+    color: #6fbaf8;
+}
+
+.left-title button {
+    padding: 5px 25px;
+    background-color: #6fbaf8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.right-title {
+    padding: 40px;
+    border-left: 1px solid #eee;
+}
+
+
+.line {
+    padding-top: 30px;
+}
+
+.line p {
+    color: #6fbaf8;
+}
+
+.line .line-1{
+    height: 4px;
+}
+
+.line .line-2{
+    height: 4px;
+}
+
+.line hr:nth-child(2) {
+    color: #6fbaf8;
+}
+
+.left-box h3 {
+    padding-bottom: 10px;
+}
+
+.left-box p {
+    margin: 5px;
+}
+
+.middle-box p {
+    padding-bottom: 50px;
+}
+
+.pill {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 3px 20px;
+    margin: 7px 7px;
+}
+
+.right-box {
+    text-align: center;
+}
+
+.right-box i {
+    color: #6fbaf8;
+    padding-bottom: 10px;
+}
+
+.right-box button {
+    padding: 5px 25px;
+    background-color: #6fbaf8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.right-box p:nth-child(4) {
+    color: #6fbaf8
+}
+
+
+@media screen and (max-width: 981px) {
+    .white-box {
+        margin-bottom: 20px;
+    }
+    .right-title {
+        border: none;
+    }
+}
