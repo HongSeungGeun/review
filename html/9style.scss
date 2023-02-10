@@ -1,0 +1,61 @@
+
+
+ul {
+    list-style-type: none;
+    li {
+        width: 400px;
+        height: 50px;
+        padding: 10px;
+        border: 1px solid black;
+    }
+    .active {
+        background-color: skyblue;
+        color: white;
+    }
+}
+
+
+.box1 {
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: green;
+}
+
+.box2 {
+    @extend .box1;
+    background-color: blue;
+}
+
+.box3 {
+    @extend .box1;
+    background-color: yellow;
+}
+
+
+
+
+@mixin 컬럼($구멍){
+    float: left;
+    padding: 15px;
+    width: $구멍;
+    height: 50px;
+    background-color: darkgrey;
+    border: 1px solid #eee;
+}
+
+div {
+    box-sizing: border-box;
+}
+.row .col-6 {
+    @include 컬럼(50%);
+}
+.row .col-4 {
+    @include 컬럼(33.33%);
+}
+.row .col-3 {
+    @include 컬럼(25%);
+}

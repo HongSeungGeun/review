@@ -1,0 +1,119 @@
+.ani-text {
+    text-align: center;
+}
+
+.ani-text:hover {
+    animation-name: 왔다갔다;
+    animation-duration: 0.8s;
+}
+
+@keyframes 왔다갔다 {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+    75% {
+        transform: translateX(100px);
+    }
+    100% { 
+        transform: translateX(0px);
+    }
+}
+
+.ani-btn {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: skyblue;
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ani-btn:hover {
+    animation-name: 흔들흔들;
+    animation-duration: 0.8s;
+}
+
+@keyframes 흔들흔들 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    75% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.ani-x {
+    text-align: center;
+    font-size: 80px;
+    margin: 150px auto;
+    cursor: pointer;
+}
+
+.ani-x:hover {
+    animation-name: 커지기;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes 커지기 {
+    0% {
+        transform: rotate(0deg);
+    }
+    40% {
+        transform: rotate(-30deg);
+    }
+    100% {
+        transform: rotate(45deg) scale(1.5);
+    }
+
+}
+
+.ani-nav:hover {
+    transform: translateX(0);
+    text-align: center;
+}
+
+.ani-navbar:hover p {
+    animation-name: 끼이익;
+    animation-duration: 1s;
+}
+
+
+.ani-nav {
+    width: 250px;
+    background-color: black;
+    text-align: right;
+    height: 100%;
+    color: white;
+    padding: 25px;
+    z-index: 5;
+    position: fixed;
+    transform: translateX(-150px);
+    transition: all 1s;
+}
+
+@keyframes 끼이익 {
+    0% {
+        transform: translateX(-50px);
+    }
+    50% {
+        transform: translateX(50px) skewX(-30deg);
+    }
+    100% { 
+        transform: translateX(0);
+    }
+}
