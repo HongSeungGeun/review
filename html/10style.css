@@ -87,7 +87,7 @@
     text-align: center;
 }
 
-.ani-navbar:hover p {
+.ani-nav:hover p {
     animation-name: 끼이익;
     animation-duration: 1s;
 }
@@ -108,10 +108,10 @@
 
 @keyframes 끼이익 {
     0% {
-        transform: translateX(-50px);
+        transform: translateX(-250px);
     }
     50% {
-        transform: translateX(50px) skewX(-30deg);
+        transform: translateX(20px) skewX(-30deg);
     }
     100% { 
         transform: translateX(0);
