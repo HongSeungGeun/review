@@ -1,0 +1,129 @@
+div {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0px 42px;
+}
+
+.left-menu {
+    background-color: royalblue;
+    color: white;
+    width: 150px;
+    height: 100vh;
+    padding: 10px;
+    z-index: 5;
+    position: fixed;
+    transform: translateX(-110px);
+}
+
+.left-menu i {
+    transform: translateX(95px);
+}
+
+
+.left-menu div {
+    padding: 15px;
+}
+
+.left-menu:hover {
+    transform: translateX(0px);
+    transition: all 0.8s;
+}
+
+.left-menu:hover i {
+    transform: translateX(0px);
+    transition: all 0.8s;
+}
+
+.input-style {
+    width: 200px;
+}
+
+.input-style:focus {
+    width: 400px;
+    transition: all 1s;
+}
+
+.nav-bar-right i{
+    padding: 0px 20px;
+    color: darkgrey;
+}
+
+
+.icon-a {
+    position: relative;
+}
+
+.white-box {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.green-box {
+    border-left: 5px solid green;
+}
+
+.red-box {
+    border-left: 5px solid red;
+}
+
+.orange-box {
+    border-left: 5px solid orange;
+}
+
+.yellow-box {
+    border-left: 5px solid yellow;
+}
+
+.chart {
+    padding: 0px 42px;
+    border-right: 1px solid darkgrey;
+}
+
+.chart-header {
+    border-bottom: 1px solid darkgrey;
+}
+
+.chart-container {
+    border-top: 1px solid darkgrey;
+    border-right: 1px solid darkgray;
+}
+
+
+
+.card-body {
+    background-color: white;
+    border: 1px solid darkgray;
+    border-right: none;
+    padding: 10px;
+}
+
+.body-title1 {
+    border-bottom: 1px solid darkgray;
+}
+
+.body-title2 {
+    border-bottom: 1px solid darkgray;
+}
+
+.blue-btn {
+    background-color: skyblue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0px 20px;
+}
+
+
+
+
+
+@media screen and (max-width: 998px) {
+    .dashboard .white-box {
+        margin: 10px;
+    }
+}
