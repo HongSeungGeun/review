@@ -1,0 +1,35 @@
+div {
+    box-sizing: border-box;
+}
+
+.alert-box {
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    display: none;
+    margin-bottom:  50px;
+    margin-top:  50px;
+}
+
+
+.alert-btn {
+    float: right;
+    border: none;
+    font-size: 26px;
+}
+
+.skyblue {
+    background-color: skyblue;
+}
+
+.lightgreen {
+    background-color: lightgreen;
+}
+
+.lightpink {
+    background-color: lightpink;
+}
+
+.lightseagreen {
+    background-color: lightseagreen;
+}
