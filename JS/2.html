@@ -30,9 +30,15 @@
         </div>
     </div> 
 
+
+
+
+
+
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <span class="navbar-brand">Navbar</span>
+            <span class="badge bg-dark badge-light">Dark 🔄</span>
             <button class="navbar-toggler" type="button">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -54,6 +60,21 @@
     </div>
 
 
+    <p>태조 이성계가 태어난 년도는?</p>
+    <input type="text" id="answer">
+    <button id="send-answer">제출</button>
+
+
+    <div class="alert alert-danger">
+        <span id="num">5</span>초 이내 구매시 사은품 증정 !
+    </div>
+
+
+
+
+
+
+
 
     <script>
         document.querySelector('.navbar-toggler').addEventListener('click', function(){
@@ -69,27 +90,110 @@
         })
 
 
+
+
         $('#submit').on('click', function(e){
-            if(document.getElementById('id').value == ''){
+            var 아이디입력값 = document.getElementById('id').value;
+            var 비번입력값 = document.getElementById('password').value;
+            if(아이디입력값 == ''){
                 alert('아이디입력해');
                 e.preventDefault();
-            } else if(document.getElementById('password').value == ''){
+            } else if(비번입력값 == ''){
                 alert('비밀번호입력해');
                 e.preventDefault();
-            } else if(document.getElementById('password').value.length !== 7 ){
+            } else if(비번입력값.length < 6 ){
                 alert('비밀번호 더 길게');
                 e.preventDefault();
             }
+            if(/\S+@\S+\.\S+/.test(아이디입력값) == false){
+                alert('이메일형식아님')
+                e.preventDefault();
+            }
+            if(/[A-Z]/.test(비번입력값) == false){
+                alert('비밀번호에 대문자 넣으세요');
+                e.preventDefault();
+            }
+
         });
 
 
 
 
+        // var count = 0;
+
+        // $('.badge').on('click', function(){
+        //     count++;
+        //     if(count % 2 !== 0){
+        //         $('.badge').html('Light 🔄')
+        //     } else {
+        //         $('.badge').html('Dark 🔄')
+        //     }
+        // })
+
+
+        var count = 5;
+
+        setInterval(function(){
+            count--;
+            if(count >= 0){
+                document.querySelector('#num').innerHTML = count;
+            }
+        }, 1000)
+        
+        setTimeout(function(){
+            $('.alert').hide();
+        }, 5500)
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+        var 나이 = 26;
+        const 출신지역 = '대구';
+
+
+
+        var 예금액 = 0;
+        var 미래예금액 = 0;
+
+        if(예금액 >= 50000){
+            미래예금액 = 예금액 * 1.20 * 1.20
+        } else if (예금액 < 50000){
+            미래예금액 = 예금액 * 1.15 * 1.15
+        }
+
+        console.log(미래예금액);
+
+
+        var first = 0;
+
+        total =  first + first * 2 / 3 + first * 2 / 3 * 2 / 3;
+
+        console.log(total);
+
+
+        // var count = 0;
+
+        // $('#send-answer').on('click', function(){
+        //     count++;
+        //     var 유저답안 = document.getElementById('answer').value;
+        //     if(유저답안 == 1335){
+        //         alert('성공')
+        //     } else if (count >= 3 && 유저답안 != 1335){
+        //         alert('멍충이');
+        //     }
+        // })
 
 
 
