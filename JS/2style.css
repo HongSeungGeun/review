@@ -1,3 +1,14 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+}
+
+.navbar-brand {
+    font-size: 30px;
+    transition: all 0.5s;
+}
+
 .list {
     display: none;
 }
@@ -8,7 +19,7 @@
     height : 100%;
     position : fixed;
     background : rgba(0,0,0,0.5);
-    z-index : 5;
+    z-index : 4;
     padding: 30px;
     visibility: hidden;
     opacity: 0;
@@ -27,7 +38,15 @@
 }
 
 
-
+.ui-bar {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    height: 1px;
+    background: black; 
+    color: white;
+    transition: .1s ease;
+}
 
 
 
