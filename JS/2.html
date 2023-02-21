@@ -23,6 +23,7 @@
         </div>
     </nav> 
 
+
     <div class="black-bg">
         <div class="white-bg">
             <h4>로그인하세요</h4>
@@ -155,6 +156,18 @@
             var 퍼센트 = (스크롤양 / 토탈높이) * 100;
             document.querySelector('.ui-bar').style.width = 퍼센트 + "%";
         })
+
+
+
+
+        $('.black-bg').on('click', function(e){
+            if(e.target == document.querySelector('.black-bg')){
+                $('.black-bg').removeClass('show-modal');
+            }
+        })
+
+
+
 
 
 
