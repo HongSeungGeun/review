@@ -11,6 +11,14 @@
     <link href="./5style.css" rel="stylesheet">
 </head>
 <body>
+    <div class="container mt-3">
+        <div class="card p-3">
+            <span class="car-title">상품명</span>
+            <span class="car-price">가격</span>
+        </div>
+    </div>
+
+
     <div class="container mt-5">
         <ul class="list">
             <li class="tab-button" data-id="0">Products</li>
@@ -31,6 +39,11 @@
 
 
     <script>
+
+        let car = {name : '소나타', price : [50000, 3000, 4000]}
+        $('.car-title').html(car.name);
+        $('.car-price').html(car.price[0]);
+
 
         // for(let i = 0; i < 3; i++){
         //     $('.tab-button').eq(i).on('click', function(){
