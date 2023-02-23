@@ -12,44 +12,19 @@
 </head>
 <body>
     
-    <div class="card-group container">
-        <div class="card">
-            <img src="https://via.placeholder.com/600">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-price">가격 : 70000</p>
-            <button class="btn btn-danger">주문하기</button>
-        </div>
-        </div>
+    <div class="container">
+        <div class="row">
 
-        <div class="card">
-            <img src="https://via.placeholder.com/600">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-price">가격 : 70000</p>
-            <button class="btn btn-danger">주문하기</button>
-        </div>
-        </div>
+            
 
-        <div class="card">
-            <img src="https://via.placeholder.com/600">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-price">가격 : 70000</p>
-            <button class="btn btn-danger">주문하기</button>
         </div>
-        </div>
+    </div> 
 
-        <div class="card">
-            <img src="https://via.placeholder.com/600">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-price">가격 : 70000</p>
-            <button class="btn btn-danger">주문하기</button>
-        </div>
-        </div>
-
+    <div class="container">
+        <button class="btn btn-danger" id="more">더보기</button>
     </div>
+
+
 
 
     <form class="container my-5 form-group">
@@ -76,26 +51,69 @@
         var products = [
             { id : 0, price : 70000, title : 'Blossom Dress' },
             { id : 1, price : 50000, title : 'Springfield Shirt' },
-            { id : 2, price : 60000, title : 'Black Monastery' },
-            { id : 3, price : 90000, title : 'COMME des GARÇONS' }
+            { id : 2, price : 60000, title : 'Black Monastery' }
         ];
 
-        for (let i = 0; i < $('.card-title').length; i++){
-            상품명(i)
-            상품가격(i)
-        }
+        var count = 0;
+
+        products.forEach(function(a, i){
+            var 템플릿 =
+            `<div class="col-sm-4">
+                <img src="https://via.placeholder.com/600" class="w-100">
+                <h5>${products[i].title}</h5>
+                <p>가격 : ${products[i].price} 원</p>
+            </div>
+            `
+            $('.row').append(템플릿);
+        })
+
+
+        $('#more').on('click', function(){
+            $.get('https://codingapple1.github.io/js/more1.json')
+                .done(function(data){
+                    if(count == 1){
+                        data.forEach(function(a, i){
+                    var 추가상품 =
+                    `<div class="col-sm-4">
+                        <img src="https://via.placeholder.com/600" class="w-100">
+                        <h5>${data[i].title}</h5>
+                        <p>가격 : ${data[i].price} 원</p>
+                    </div>
+                    `
+                    $('.row').append(추가상품)
+                })} 
+                })
+                count++;
+                $.get('https://codingapple1.github.io/js/more2.json')
+                    .done(function(data){
+                        if(count == 2){
+                            data.forEach(function(a, i){
+                        var 추가상품2 =
+                        `<div class="col-sm-4">
+                            <img src="https://via.placeholder.com/600" class="w-100">
+                            <h5>${data[i].title}</h5>
+                            <p>가격 : ${data[i].price} 원</p>
+                        </div>
+                        `
+                        $('.row').append(추가상품2)
+                            }) 
+                        }
+                    }) 
+                    if(count === 3){
+                        $('#more').css('display', 'none');
+                    }
+        })
 
 
 
 
-        function 상품명(숫자){
-        $('.card-title').eq(숫자).html(products[숫자].title);
-        }
-        
 
-        function 상품가격(숫자){
-        $('.card-price').eq(숫자).html(`가격 : ${products[숫자].price} 원`);
-        }
+
+
+
+
+
+
 
 
         var pants = [28, 30, 32, 34];
@@ -118,10 +136,24 @@
             $('.form-select').eq(1).addClass('form-hide');
         }
         })
+
         
 
 
-        var  출석부 = ['은주', '현지', '혜주', '연진']
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var  출석부 = ['은주', '현지', '연진', '혜주']
 
         function 이름찾기(name){
             출석부.forEach(function(a){
